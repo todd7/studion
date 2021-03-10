@@ -1,4 +1,10 @@
 $(document).ready(() => {
+  $('.navbar__menu-btn').on('click', function () {
+    $('.navbar__links').toggleClass('active');
+    $(this).find("i").toggleClass('fa-bars');
+    $(this).find("i").toggleClass('fa-times');
+  });
+
   const slickOptons = {
     autoplay: true,
     prevArrow: '<button type="button" class="slick-prev slider__prev-arrow">Previous</button>',
